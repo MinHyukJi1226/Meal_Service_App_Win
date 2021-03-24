@@ -26,6 +26,7 @@ namespace Meal_app
             webClient.Encoding = Encoding.UTF8;
 
             url += DateTime.Now.ToString("yyyyMMdd");
+            //url += "20210327";
 
             Stream stream = webClient.OpenRead(url);
             StreamReader reader = new StreamReader(stream);
@@ -40,52 +41,68 @@ namespace Meal_app
 
             //textBox1.Text = root.mealServiceDietInfo[1].row[0].DDISH_NM;
 
-            String moning = root.mealServiceDietInfo[1].row[0].DDISH_NM;
-            String lunch = root.mealServiceDietInfo[1].row[1].DDISH_NM;
-            String dinner = root.mealServiceDietInfo[1].row[2].DDISH_NM;
+            String moning = null;
+            String lunch = null;
+            String dinner = null;
 
             try
             {
-                moning = moning.Replace("<br/>", "\r\n");
+                moning = root.mealServiceDietInfo[1].row[0].DDISH_NM;
+                if (moning== null) throw new NullReferenceException("this is null.");
             }
-            catch 
-            {
+                
+            catch
+            { 
                 textBox1.Text = "급식 정보가 없습니다.";
             }
             finally
             {
-                textBox1.Text = moning;
+                if (moning != null)
+                {
+                    moning = moning.Replace("<br/>", "\r\n");
+                    textBox1.Text = moning;
+                }
             }
 
             try
             {
-                lunch = lunch.Replace("<br/>", "\r\n");
+                lunch = root.mealServiceDietInfo[1].row[1].DDISH_NM;
+                if (lunch == null) throw new NullReferenceException("this is null.");
             }
+
             catch
             {
-                textBox1.Text = "급식 정보가 없습니다.";
+                textBox2.Text = "급식 정보가 없습니다.";
             }
             finally
             {
-                textBox2.Text = lunch;
+                if (lunch != null)
+                {
+                    lunch = lunch.Replace("<br/>", "\r\n");
+                    textBox2.Text = lunch;
+                }
             }
-
             try
             {
-                dinner = dinner.Replace("<br/>", "\r\n");
+                dinner = root.mealServiceDietInfo[1].row[2].DDISH_NM;
+                if (dinner == null) throw new NullReferenceException("this is null.");
             }
+
             catch
             {
-                textBox1.Text = "급식 정보가 없습니다.";
+                textBox3.Text = "급식 정보가 없습니다.";   
             }
             finally
             {
-                textBox3.Text = dinner;
+                if (dinner != null)
+                {
+                    dinner = dinner.Replace("<br/>", "\r\n");
+                    textBox3.Text = dinner;
+                }
             }
-
         }
     }
-        
+
     public class RESULT
     {
         public string CODE { get; set; }
