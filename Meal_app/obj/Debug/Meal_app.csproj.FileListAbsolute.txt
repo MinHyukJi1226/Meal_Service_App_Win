@@ -1,0 +1,13 @@
+C:\Users\USER\source\repos\Meal_app\bin\Debug\Meal_app.exe.config
+C:\Users\USER\source\repos\Meal_app\bin\Debug\Meal_app.exe
+C:\Users\USER\source\repos\Meal_app\bin\Debug\Meal_app.pdb
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.Form1.resources
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.Properties.Resources.resources
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.exe
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.pdb
+C:\Users\USER\source\repos\Meal_app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\source\repos\Meal_app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\source\repos\Meal_app\obj\Debug\Meal_app.csproj.CopyComplete
